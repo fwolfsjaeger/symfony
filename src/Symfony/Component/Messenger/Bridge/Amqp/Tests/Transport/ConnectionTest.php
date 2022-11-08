@@ -183,6 +183,15 @@ class ConnectionTest extends TestCase
                         'x-max-length-bytes' => '300',
                         'x-max-priority' => '4',
                     ],
+                    'arguments_delay' => [
+                        'x-delay' => 200,
+                    ],
+                ],
+            ],
+            'delay' => [
+                'arguments' => [
+                    'x-queue-type' => 'classic',
+                    'x-message-deduplication' => true,
                 ],
             ],
             'exchange' => [
